@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+
+<html>
+
+<script language="JavaScript">
+
+function printSomething(form){
+	var UserVar = form.username.value;
+	var PasswordVar = form.password.value;
+	alert("User: " + UserVar + "   Password: " + PasswordVar);
+}
+
+</script>
+
+
+	<head>
+		<title>Login</title>
+	</head>
+
+	<body>
+		<h1>Enter Username and Password to Log In</h1>
+		<form name="signUpForm" action="" method="get">
+			<input type="text" name="username" value="enter username:">
+			<input type="text" name="password" value="enter password:">
+			<!-- THE BUTTON BELOW SHOULD SUBMIT THE ENTERED USER DATA -->
+			<input type="button" name="submit" value="Click" onClick="printSomething(this.form)">
+		</form>
+	</body>
+
+</html>
